@@ -1,0 +1,59 @@
+.catalog {
+  &__wrapper {
+  }
+
+  &__search {
+    display: flex;
+    gap: 30px;
+  }
+
+  &__box {
+    position: relative;
+    flex-grow: 1;
+  }
+
+  &__input {
+    padding: 14px 12px;
+    border: 1px solid #afafaf;
+
+    width: 100%;
+
+    @include text-style(18px, 400, #afafaf);
+  }
+
+  &__icon {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+  }
+
+  &__list {
+    padding: 64px 0 213px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 23px;
+  }
+
+  &__item {
+    position: relative;
+
+    &:hover {
+      .blur-vertical {
+        top: 50%;
+      }
+    }
+  }
+}
+
+.focus-visible {
+  border: 1px solid #373a48;
+  @include text-style(18px, 400, #373a48);
+}
+
+.focus-visible + .catalog__icon {
+  circle,
+  path {
+    stroke: #373a48;
+  }
+}

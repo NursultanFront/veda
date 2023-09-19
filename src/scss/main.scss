@@ -6,11 +6,26 @@
 
 // подключения компонентов страницы
 @import "./components/header";
+@import "./components/footer";
+@import "./components/main/main";
+@import "./components/main/services";
+@import "./components/main/about";
+@import "./components/main/company";
+@import "./components/main/object";
 
-// тестовые стили, удалите их
-.page__body {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: var(--vh);
-}
+@import "./components/catalog/catalog";
+
+@import "./components/contatcs/our-contatcs";
+
+@import "./components/vehicle-cart/vehicle";
+
+@import "./components/servises/our-services";
+
+@import "./components/cards/cards";
+@import "./components/project/project";
+@import "./components/contact";
+@import "./components/form";
+
+@import "./components/range-slider";
+
+@import "./components/slider";

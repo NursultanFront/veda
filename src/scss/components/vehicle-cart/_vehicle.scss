@@ -1,0 +1,169 @@
+.vehicle {
+  &__wrapper {
+    display: flex;
+    gap: 66px;
+  }
+
+  &__aside {
+  }
+
+  &__more-info {
+  }
+}
+
+.aside-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+
+  &__item {
+    color: #373a48;
+    font-family: Montserrat;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%; /* 32px */
+
+    &--active {
+      color: #f2994a;
+      font-family: Montserrat;
+      font-size: 32px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 100%; /* 32px */
+    }
+  }
+}
+
+.more-info {
+  &__content {
+    display: grid;
+    grid-template-columns: 55% 45%;
+  }
+
+  &__title {
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__card {
+    width: 130px;
+  }
+}
+
+.card-info {
+  padding: 46px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 22px;
+  min-height: 359px;
+  background-color: #fff;
+
+  &__box {
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+  }
+
+  &__title {
+    color: var(--, #373a48);
+    font-family: Montserrat;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 123.5%; /* 39.52px */
+  }
+
+  &__holder {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  &__price {
+    color: var(--, #373a48);
+    font-family: Montserrat;
+    font-size: 23.637px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 100%; /* 23.637px */
+    letter-spacing: 1.182px;
+  }
+  &__option {
+    color: var(--, #373a48);
+    font-family: Montserrat;
+    font-size: 16.743px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%; /* 16.743px */
+    letter-spacing: 0.837px;
+  }
+
+  &__button {
+    align-self: flex-start;
+  }
+}
+
+.feature {
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  &__item {
+    padding: 5px 0;
+    border-bottom: 1px solid #dde2e6;
+
+    &:nth-child(odd) {
+      .feature__text,
+      .feature__descr {
+        font-weight: bold;
+      }
+    }
+  }
+
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  &__text {
+    color: var(--, #373a48);
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%; /* 20px */
+    letter-spacing: 1px;
+  }
+  &__descr {
+    color: var(--, #373a48);
+    text-align: right;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%; /* 20px */
+    letter-spacing: 1px;
+  }
+}
+
+.gallery {
+  &__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 25px;
+  }
+}
+
+.more-info__descr,
+.gallery,
+.feature {
+  padding: 80px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 44px;
+}

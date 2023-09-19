@@ -19,6 +19,7 @@ html {
   min-width: 320px;
   min-height: 100%;
   font-size: 16px;
+  background: #edf3f9;
 }
 
 img {
@@ -31,6 +32,37 @@ a {
   text-decoration: none;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+button {
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  border: 0;
+}
+
+input {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  outline: none;
+}
 .site-container {
   overflow: hidden; // если используете на сайте position: sticky - уберите эту настройку
 }
@@ -104,4 +136,140 @@ a {
 
 .page--ios .dis-scroll {
   position: relative;
+}
+
+.orange-button {
+  padding: 10px 52px;
+  background-color: var(--orange-color);
+
+  @include text-style(17px, 400, var(--light-color));
+
+  &:hover {
+    background-color: #ffbf90;
+  }
+}
+
+.site-title {
+}
+.site-title-box {
+  display: flex;
+  justify-content: space-between;
+  gap: 11px;
+}
+
+.site-link {
+  @include text-style(17px, 400, var(--blue-color));
+
+  &:hover {
+    @include text-style(17px, 400, #8a8a8a);
+  }
+}
+
+.blur-vertical {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: #fff;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%; /* 20.4px */
+
+  position: absolute;
+  border-right: 1px solid var(--light-color);
+  background: linear-gradient(
+    90deg,
+    rgba(244, 149, 31, 0.3) 0%,
+    rgba(255, 255, 255, 0.3) 100%
+  );
+  backdrop-filter: blur(16px);
+  z-index: 2;
+  top: 70%;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.blur-horizontal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: absolute;
+  border-right: 1px solid var(--light-color);
+  background: linear-gradient(
+    90deg,
+    rgba(244, 149, 31, 0.3) 0%,
+    rgba(255, 255, 255, 0.3) 100%
+  );
+  backdrop-filter: blur(16px);
+  z-index: 2;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 70%;
+}
+
+.breadcrumbs {
+  padding: 60px 0;
+  &__text {
+    @include text-style(17px, 400, #373a48);
+    &--active {
+      @include text-style(17px, 600, #373a48);
+    }
+  }
+}
+
+.subheader {
+  border: 1px solid #a7d4ed;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.4) 0%,
+    rgba(255, 255, 255, 0.4) 100%
+  );
+  backdrop-filter: blur(16px);
+
+  &__wrapper {
+    padding: 20px;
+
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  &__text {
+    @include text-style(17px, 500, #373a48);
+  }
+}
+
+.padding-inner {
+  padding: 60px 0;
+}
+
+.site-input {
+  padding: 14px 12px;
+  border: 1px solid #afafaf;
+
+  width: 100%;
+
+  @include text-style(18px, 400, #afafaf);
+}
+
+.site-search-icon {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+}
+
+.site-input-box {
+  position: relative;
+  flex-grow: 1;
+}
+
+.site-slider {
+  overflow: hidden;
 }

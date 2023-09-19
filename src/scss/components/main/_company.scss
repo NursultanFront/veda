@@ -1,0 +1,32 @@
+.company {
+  &__wrapper {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    background-color: var(--light-color);
+  }
+  &__left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 52px;
+  }
+  &__right {
+  }
+
+  &__title-box {
+    display: flex;
+    align-items: flex-end;
+    gap: 11px;
+  }
+  &__title {
+    @include text-style(32px, 400, var(--gray-color));
+  }
+  &__desc {
+    width: 80%;
+  }
+  &__box {
+    display: flex;
+    align-items: center;
+    gap: 31px;
+  }
+}

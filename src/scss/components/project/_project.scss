@@ -1,0 +1,99 @@
+.project {
+  padding: 142px 0 110px;
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+  }
+
+  &__title {
+    line-height: 123.5%; /* 39.52px */
+
+    @include text-style(32px, 500, #373a48);
+  }
+
+  &__content {
+    display: flex;
+  }
+}
+
+.deadline {
+  padding: 81px 68px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+
+  background: #fff;
+  box-shadow: 0px 0px 11.50443px 0px rgba(181, 210, 255, 0.25);
+
+  &__box {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  &__title {
+    text-transform: uppercase;
+
+    @include text-style(32px, 400, #373a48);
+  }
+  &__number {
+    text-transform: uppercase;
+
+    @include text-style(32px, 400, #f4951f);
+  }
+  &__descr {
+    line-height: 160%; /* 25.6px */
+
+    @include text-style(16px, 400, #373a48);
+  }
+}
+
+.another-project {
+  padding: 0 0 189px;
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+  }
+  &__item {
+    display: flex;
+  }
+
+  &__img {
+    width: 169px;
+  }
+
+  &__info {
+    padding: 23px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    background: #fff;
+    box-shadow: 0px 0px 12.34768px 0px rgba(181, 210, 255, 0.25);
+  }
+
+  &__title {
+    color: #373a48;
+    font-family: Montserrat;
+    font-size: 17.097px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 123.5%; /* 21.115px */
+  }
+  &__link {
+    color: #f4951f;
+    font-family: Montserrat;
+    font-size: 15.026px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40.755px; /* 271.226% */
+  }
+}

@@ -1,0 +1,32 @@
+.our-contatcs {
+  padding: 60px 0 219px 0;
+  &__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  &__left {
+    display: flex;
+    flex-direction: column;
+    gap: 42px;
+  }
+
+  &__box {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  &__title {
+    @include text-style(16px, 500, #ff613f);
+  }
+
+  &__text {
+    @include text-style(32px, 400, #202020);
+
+    &--underline {
+      text-decoration: underline;
+    }
+  }
+}

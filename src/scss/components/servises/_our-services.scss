@@ -1,0 +1,29 @@
+.our-services {
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+  }
+  &__img {
+    position: relative;
+  }
+
+  &__box {
+    padding: 38px;
+  }
+
+  &__title {
+    color: #fff;
+    font-family: Montserrat;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  &__holder {
+    display: flex;
+    align-items: center;
+    gap: 38px;
+  }
+}

@@ -1,0 +1,15 @@
+.main-slider {
+  &__pagination {
+  }
+}
+
+.slider {
+  &-button {
+    cursor: pointer;
+    svg {
+      width: 48px;
+      height: 48px;
+      fill: white;
+    }
+  }
+}

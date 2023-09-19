@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'ChangelingNeo';
+    src: url('fonts/ChangelingNeo.eot');
+    src: url('fonts/ChangelingNeo.eot') format('embedded-opentype'),
+         url('fonts/ChangelingNeo.woff2') format('woff2'),
+         url('fonts/ChangelingNeo.woff') format('woff'),
+         url('fonts/ChangelingNeo.ttf') format('truetype'),
+         url('fonts/ChangelingNeo.svg#ChangelingNeo') format('svg');
+}

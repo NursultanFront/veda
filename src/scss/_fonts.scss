@@ -1,1 +1,31 @@
 // @include font-face("Muller", "../fonts/MullerRegular", 400, normal);
+// @include font-face("Changeling Neo")
+
+// @font-face {
+//   font-family: "Changeling Neo";
+//   src: url("../resources/fonts/ChangelingNeoBold.ttf") format("ttf");
+//   font-weight: 700;
+//   font-style: normal;
+// }
+
+// @font-face {
+//   font-family: "Changeling Neo";
+//   src: url("../resources/fonts/ChangelingNeo.ttf") format("ttf");
+//   font-weight: 400;
+// }
+
+// @font-face {
+//   font-family: "Changeling Neo";
+//   src: url("../resources/fonts/ChangelingNeoLight.ttf") format("ttf");
+//   font-weight: 400;
+//   font-style: normal;
+// }
+
+@font-face {
+  font-family: "ChangelingNeo";
+  src: url("../fonts/ChangelingNeo.eot");
+  src: url("../fonts/ChangelingNeo.eot") format("embedded-opentype"),
+    url("../fonts/ChangelingNeo.woff2") format("woff2"),
+    url("../fonts/ChangelingNeo.woff") format("woff"),
+    url("../fonts/ChangelingNeo.ttf") format("truetype");
+}

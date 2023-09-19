@@ -1,0 +1,79 @@
+.about {
+  &__wrapper {
+    padding: 225px 0 225px;
+  }
+
+  &__title {
+    display: flex;
+    align-items: center;
+    line-height: 117%;
+    text-transform: uppercase;
+    @include text-style(24px, 400, var(--gray-color));
+  }
+  &__box {
+    padding: 34px 0;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #dde2e6;
+    border-bottom: 1px solid #dde2e6;
+  }
+  &__slider {
+    display: flex;
+    gap: 16px;
+  }
+
+  &__info {
+  }
+  &__number {
+    @include text-style(115px, 400, var(--orange-color));
+  }
+  &__text {
+    @include text-style(16px, 400, #202020);
+  }
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 13px;
+    width: 55%;
+  }
+  &__caption {
+    @include text-style(24px, 400, #373a48);
+  }
+  &__descr {
+    @include text-style(16px, 400, #373a48);
+  }
+}
+
+.round {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  border-radius: 100%;
+  border: 1.171px solid var(--light-blue-color);
+  width: 137.037px;
+  height: 137.037px;
+
+  cursor: pointer;
+
+  &__text {
+    @include text-style(16px, 400, var(--light-blue-color));
+  }
+  &__number {
+    @include text-style(25px, 600, var(--light-blue-color));
+  }
+
+  &--active {
+    border: 1.171px solid var(--orange-color);
+
+    .round__text {
+      @include text-style(16px, 400, var(--orange-color));
+    }
+    .round__number {
+      @include text-style(25px, 600, var(--orange-color));
+    }
+  }
+}

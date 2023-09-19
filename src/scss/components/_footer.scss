@@ -1,0 +1,27 @@
+.footer {
+  padding: 24px;
+  &__wrapper {
+    display: flex;
+    gap: 50px;
+  }
+
+  &__nav {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+  }
+
+  &__list {
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__link {
+    @include text-style(15px, 400, var(--blue-color));
+
+    &:hover {
+      @include text-style(15px, 400, var(--orange-color));
+    }
+  }
+}

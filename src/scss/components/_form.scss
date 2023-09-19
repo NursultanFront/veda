@@ -1,0 +1,81 @@
+.form {
+  background-color: var(--light-color);
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+  }
+
+  &__left {
+    flex-basis: 42%;
+  }
+
+  &__right {
+    padding: 50px 50px 50px 0;
+    flex-basis: 58%;
+    display: flex;
+    flex-direction: column;
+    gap: 65px;
+  }
+
+  &__box {
+    display: flex;
+    gap: 65px;
+  }
+
+  &__input {
+    flex-grow: 1;
+    padding: 7.594px 0px 19.525px 0px;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+
+    @include text-style(15px, 400, #373a48);
+
+    border-bottom: 0.949px solid #dde2e6;
+    outline: none;
+  }
+
+  &__footer {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+
+  &__checkbox {
+    display: none;
+  }
+
+  &__label {
+    cursor: pointer;
+  }
+
+  &__check {
+    position: relative;
+    padding: 2px;
+    border: 1px solid #8a8a8a;
+    width: 13.841px;
+    height: 13.841px;
+    cursor: pointer;
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 80%;
+      height: 80%;
+      background-color: #8a8a8a;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    &--active {
+      border: 1px solid #038ad2;
+
+      &::after {
+        background-color: #038ad2;
+      }
+    }
+  }
+}
