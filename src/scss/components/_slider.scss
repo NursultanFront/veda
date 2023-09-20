@@ -4,6 +4,11 @@
     left: calc(50% + 650px) !important;
     bottom: 50% !important;
 
+    @media (max-width: 1350px) {
+      left: initial !important;
+      right: 0 !important;
+    }
+
     .swiper-pagination-bullet {
       border-radius: 44px;
       border: 1px solid #f2f4fa;
