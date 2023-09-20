@@ -1,5 +1,33 @@
 .main-slider {
-  &__pagination {
+  &-pag {
+    width: auto !important;
+    left: calc(50% + 650px) !important;
+    bottom: 50% !important;
+
+    .swiper-pagination-bullet {
+      border-radius: 44px;
+      border: 1px solid #f2f4fa;
+      background: transparent;
+
+      width: 21px;
+      height: 21px;
+
+      margin-top: 8px !important;
+    }
+    .swiper-pagination-bullet-active {
+      position: relative;
+      &::before {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        content: "";
+        width: 15px;
+        height: 15px;
+        border-radius: 44px;
+        background: #f2f4fa;
+      }
+    }
   }
 }
 
@@ -11,5 +39,9 @@
       height: 48px;
       fill: white;
     }
+  }
+
+  &-button.swiper-button-disabled {
+    opacity: 0.4;
   }
 }

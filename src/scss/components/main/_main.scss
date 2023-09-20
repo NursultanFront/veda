@@ -1,6 +1,6 @@
 .main {
-  height: 100vh;
-  background-image: url("../../img/main.png");
+  position: relative;
+  background-color: blue;
   background-repeat: no-repeat;
   background-size: cover;
 
@@ -29,7 +29,7 @@
   }
 
   &__content {
-    padding: 241px 0px 30px;
+    padding: 241px 0px;
     display: flex;
     flex-direction: column;
     gap: 20px;

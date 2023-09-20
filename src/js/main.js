@@ -6,7 +6,6 @@ import "./_components";
 import collapseShow from "./components/collapse";
 import noUiSlider from "nouislider";
 import Choices from "choices.js";
-import Swiper from "swiper";
 
 document.addEventListener("DOMContentLoaded", function () {
   collapseShow();
@@ -118,37 +117,4 @@ document.addEventListener("DOMContentLoaded", function () {
       searchEnabled: false,
     });
   }
-
-  const heroSliderSpeed = 1500;
-
-  const btn = document.querySelector(".slider-next");
-  console.log(btn);
-
-  // Слайдер здесь
-
-  const mainSlider = new Swiper(".main-slider", {
-    slidesPerView: 1,
-    navigation: {
-      nextEl: "slider-next",
-      prevEl: "slider-prev",
-    },
-    // pagination: {
-    //   el: ".hero__pag",
-    //   type: "bullets",
-    //   clickable: true,
-    // },
-    // on: {
-    //   init: function () {
-    //     const paginationBullets = document.querySelectorAll(
-    //       ".hero__pag .swiper-pagination-bullet"
-    //     );
-
-    //     paginationBullets.forEach((el) => {
-    //       el.innerHTML = `<span class="hero__bar"></span>`;
-    //     });
-    //   },
-    // },
-  });
-
-  console.log(mainSlider);
 });
