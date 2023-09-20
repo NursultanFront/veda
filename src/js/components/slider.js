@@ -73,20 +73,13 @@ const objectSlider = new Swiper(".object__slider", {
   },
 });
 
-// const gallerySlider = new Swiper(".gallery__wrapper", {
-//   slidesPerView: 2,
-//   // grid: {
-//   //   rows: 2,
-//   // },
-//   // pagination: {
-//   //   el: ".gallery-slider-pag",
-//   //   clickable: true,
-//   // },
-// });
-
 const gallerySlider = new Swiper(".gallery__wrapper", {
   slidesPerView: 3,
-  spaceBetween: 5,
+  grid: {
+    fill: "row",
+    rows: 2,
+  },
+  spaceBetween: 10,
   navigation: {
     nextEl: ".object-next",
     prevEl: ".object-prev",
