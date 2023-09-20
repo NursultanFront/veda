@@ -23,6 +23,20 @@
   </head>
 
   <body class="page__body">
+    <div class="modal" id="modal-slider">
+      <div class="modal-content">
+        <div class="swiper-wrapper">
+          <!-- Сюда будут добавляться слайды из вашей галереи -->
+        </div>
+        <!-- Навигационные кнопки Swiper -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <!-- Пагинация Swiper -->
+        <div class="swiper-pagination"></div>
+      </div>
+      <!-- Кнопка закрытия модального окна -->
+      <span id="close-image-modal" class="close">&times;</span>
+    </div>
     <header class="header">
       <div class="container">
         <div class="header__wrapper">
@@ -496,20 +510,5 @@
         </div>
       </div>
     </footer>
-
-    <div id="image-modal" class="modal">
-      <div class="modal-content">
-        <div class="swiper-wrapper">
-          <!-- Сюда будут добавляться слайды из вашей галереи -->
-        </div>
-        <!-- Навигационные кнопки Swiper -->
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-        <!-- Пагинация Swiper -->
-        <div class="swiper-pagination"></div>
-      </div>
-      <!-- Кнопка закрытия модального окна -->
-      <span id="close-image-modal" class="close">&times;</span>
-    </div>
   </body>
 </html>

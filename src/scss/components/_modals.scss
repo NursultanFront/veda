@@ -1,5 +1,6 @@
-.modal-image {
+.modal {
   display: none;
+
   position: fixed;
   top: 0;
   left: 0;
@@ -11,12 +12,22 @@
   justify-content: center;
 }
 
+.modal-content {
+  min-width: 0;
+
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
 .modal-content img {
   max-width: 80%;
   max-height: 80%;
 }
 
-.modal-close {
+.close {
   position: absolute;
   top: 10px;
   right: 10px;
