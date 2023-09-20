@@ -17,6 +17,15 @@
     border-top: 1px solid #dde2e6;
     border-bottom: 1px solid #dde2e6;
   }
+
+  &__buttons {
+    padding: 34px 0;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #dde2e6;
+    border-bottom: 1px solid #dde2e6;
+  }
+
   &__slider {
     display: flex;
     gap: 16px;

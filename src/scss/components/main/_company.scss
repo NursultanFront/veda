@@ -11,6 +11,8 @@
     gap: 52px;
   }
   &__right {
+    position: relative;
+    overflow: hidden;
   }
 
   &__title-box {
@@ -28,5 +30,24 @@
     display: flex;
     align-items: center;
     gap: 31px;
+  }
+
+  &__nav {
+    padding: 18px;
+    position: absolute;
+    display: flex;
+    gap: 10px;
+
+    left: 0px;
+    bottom: 0px;
+    z-index: 5;
+
+    border-right: 1px solid #fff;
+    background: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.3) 0%,
+      rgba(255, 255, 255, 0.3) 50%
+    );
+    backdrop-filter: blur(5.5px);
   }
 }

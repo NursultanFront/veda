@@ -8,9 +8,22 @@
   }
 
   &__slider {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 31px;
+  }
+
+  &__nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 10px;
+
+    left: 0px;
+    bottom: 0px;
+    z-index: 5;
   }
 
   &__item {

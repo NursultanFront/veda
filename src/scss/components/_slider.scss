@@ -44,9 +44,33 @@
       height: 48px;
       fill: white;
     }
+
+    &--blue {
+      svg {
+        width: 48px;
+        height: 48px;
+      }
+
+      circle {
+        stroke: #038ad2;
+      }
+      path {
+        fill: #038ad2;
+      }
+    }
   }
 
   &-button.swiper-button-disabled {
     opacity: 0.4;
+  }
+}
+
+.object-slider-pag,
+.gallery-slider-pag {
+  position: static;
+  width: auto !important;
+
+  .swiper-pagination-bullet-active {
+    background-color: #f4951f;
   }
 }
