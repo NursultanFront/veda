@@ -20,6 +20,7 @@
   &__list {
     flex-grow: 1;
     display: flex;
+    gap: 67px;
     justify-content: space-between;
 
     @media (max-width: 1028px) {
