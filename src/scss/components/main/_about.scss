@@ -1,4 +1,10 @@
 .about {
+  .container {
+    @include small-tablet {
+      padding-right: 0px;
+    }
+  }
+
   &__wrapper {
     padding: 225px 0 225px;
 

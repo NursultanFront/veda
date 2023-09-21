@@ -9,6 +9,10 @@
       right: 0 !important;
     }
 
+    @include small-tablet {
+      display: none;
+    }
+
     .swiper-pagination-bullet {
       border-radius: 44px;
       border: 1px solid #f2f4fa;

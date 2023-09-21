@@ -1,8 +1,14 @@
 .footer {
-  padding: 24px;
   &__wrapper {
+    padding: 24px 0;
+
     display: flex;
     gap: 50px;
+
+    @include small-tablet {
+      flex-direction: column;
+      gap: 30px;
+    }
   }
 
   &__nav {
@@ -15,13 +21,62 @@
     flex-grow: 1;
     display: flex;
     justify-content: space-between;
+
+    @media (max-width: 1028px) {
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    @include small-tablet {
+      flex-direction: row;
+    }
+  }
+
+  &__right,
+  &__left {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-grow: 1;
+
+    @include small-tablet {
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: normal;
+      gap: 20px;
+    }
   }
 
   &__link {
-    @include text-style(15px, 400, var(--blue-color));
+    @include text-style(13px, 400, var(--blue-color));
 
     &:hover {
-      @include text-style(15px, 400, var(--orange-color));
+      @include text-style(13px, 400, var(--orange-color));
     }
+  }
+
+  &__btn {
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+    width: 50px;
+    height: 50px;
+    border: 1px solid #f4951f;
+    border-radius: 100%;
+
+    svg {
+      fill: #f4951f;
+      width: 15px;
+      height: 15px;
+    }
+
+    @include small-tablet {
+      display: flex;
+    }
+  }
+
+  .site-title-box {
+    align-items: center;
   }
 }

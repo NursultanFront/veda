@@ -147,6 +147,10 @@ input {
   &:hover {
     background-color: #ffbf90;
   }
+
+  &:disabled {
+    opacity: 0.4;
+  }
 }
 
 .site-title {
@@ -207,6 +211,8 @@ input {
   left: 0;
   bottom: 0;
   right: 0;
+
+  transition: right 0.3s ease-in;
 }
 
 .blur-horizontal {
@@ -226,7 +232,9 @@ input {
   top: 0;
   left: 0;
   bottom: 0;
-  right: 70%;
+  right: 50%;
+
+  transition: right 0.3s ease-in;
 }
 
 .breadcrumbs {

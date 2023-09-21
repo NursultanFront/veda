@@ -45,13 +45,18 @@
   }
 
   .orange-button {
+    display: none;
     align-self: center;
+
+    @include small-tablet {
+      display: block;
+    }
   }
 }
 
 .card {
   &:hover {
-    .card__blur {
+    .blur-horizontal {
       right: 30%;
     }
   }
