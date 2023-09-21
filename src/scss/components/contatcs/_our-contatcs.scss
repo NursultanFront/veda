@@ -4,12 +4,22 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
+
+    @media (max-width: 950px) {
+      grid-template-columns: 1fr;
+    }
   }
 
   &__left {
     display: flex;
     flex-direction: column;
     gap: 42px;
+  }
+
+  &__right {
+    @media (max-width: 950px) {
+      display: none;
+    }
   }
 
   &__box {
@@ -27,6 +37,10 @@
 
     &--underline {
       text-decoration: underline;
+    }
+
+    @include mobile {
+      @include text-style(20px, 400, #202020);
     }
   }
 }
