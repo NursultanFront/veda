@@ -5,6 +5,16 @@
     display: flex;
     align-items: center;
     gap: 50px;
+
+    @include small-tablet {
+      flex-direction: column;
+      gap: 20px;
+
+      img {
+        width: 400px;
+        height: 400px;
+      }
+    }
   }
 
   &__left {
