@@ -19,9 +19,6 @@
     align-items: center;
     line-height: 117%;
     text-transform: uppercase;
-    @include text-style(24px, 400, var(--gray-color));
-
-    display: flex;
 
     @include tablet {
       display: none;
@@ -39,6 +36,13 @@
 
       @include tablet {
         display: flex;
+      }
+    }
+
+    .about__link {
+      @include mobile {
+        display: block;
+        align-self: center;
       }
     }
 
@@ -118,6 +122,15 @@
 
     @include small-tablet {
       @include text-style(14px, 400, #373a48);
+    }
+  }
+
+  &__link {
+    display: inline-block;
+    padding: 30px 0;
+
+    @include mobile {
+      display: none;
     }
   }
 }

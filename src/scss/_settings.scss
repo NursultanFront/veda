@@ -199,20 +199,22 @@ input {
   line-height: 120%; /* 20.4px */
 
   position: absolute;
-  border-right: 1px solid var(--light-color);
+
+  border-top: 0.529px solid #fff;
   background: linear-gradient(
     90deg,
-    rgba(244, 149, 31, 0.3) 0%,
-    rgba(255, 255, 255, 0.3) 100%
+    rgba(13, 13, 13, 0.4) 0%,
+    rgba(58, 58, 58, 0.4) 100%
   );
-  backdrop-filter: blur(16px);
+  backdrop-filter: blur(3.1724915504455566px);
+
   z-index: 2;
   top: 70%;
   left: 0;
   bottom: 0;
   right: 0;
 
-  transition: right 0.3s ease-in;
+  transition: top 0.3s ease-in;
 }
 
 .blur-horizontal {
@@ -266,6 +268,10 @@ input {
 
   &__text {
     @include text-style(17px, 500, #373a48);
+  }
+
+  @include small-tablet {
+    display: none;
   }
 }
 

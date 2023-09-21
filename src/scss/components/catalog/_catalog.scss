@@ -5,6 +5,10 @@
   &__search {
     display: flex;
     gap: 30px;
+
+    @include small-tablet {
+      flex-direction: column;
+    }
   }
 
   &__box {
@@ -33,6 +37,10 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 23px;
+
+    @include small-tablet {
+      grid-template-columns: repeat(2, 1fr);
+    }
   }
 
   &__item {
@@ -42,6 +50,10 @@
       .blur-vertical {
         top: 50%;
       }
+    }
+
+    img {
+      width: 100%;
     }
   }
 }
