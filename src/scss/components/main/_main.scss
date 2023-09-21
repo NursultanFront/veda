@@ -30,6 +30,10 @@
       font-weight: 500;
       @include text-style(17px, 500, var(--light-color));
     }
+
+    @include small-tablet {
+      display: none;
+    }
   }
 
   &__content {

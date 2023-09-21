@@ -2,6 +2,7 @@
   &__wrapper {
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
 
   &__logo {
@@ -15,6 +16,10 @@
 }
 
 .nav {
+  @include small-tablet {
+    display: none;
+  }
+
   &__list {
     display: flex;
     align-items: center;
@@ -22,13 +27,110 @@
   }
 
   &__text {
-    font-size: 24px;
-    font-weight: 400;
     letter-spacing: 1.2px;
     @include text-style(24px, 400, var(--blue-color));
 
     &:hover {
       @include text-style(24px, 400, var(--orange-color));
     }
+
+    @include tablet {
+      @include text-style(16px, 400, var(--blue-color));
+    }
+  }
+}
+
+/* Гамбургер иконка */
+.menu-btn {
+  display: none;
+
+  width: 30px;
+  height: 30px;
+  position: relative;
+  z-index: 26;
+  overflow: hidden;
+
+  .bar {
+    width: 30px;
+    height: 4px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 4px;
+    transform: translate(-50%, -50%);
+    background-color: blue;
+    transition: all 0.3s ease-in-out;
+
+    &:nth-of-type(2) {
+      top: calc(50% - 9px);
+    }
+
+    &:nth-of-type(3) {
+      top: calc(50% + 9px);
+    }
+  }
+
+  &.active {
+    .bar {
+      &:nth-of-type(1) {
+        display: none;
+      }
+
+      &:nth-of-type(2) {
+        top: 50%;
+        transform: translate(-50%, 0%) rotate(45deg);
+      }
+
+      &:nth-of-type(3) {
+        top: 50%;
+        transform: translate(-50%, 0%) rotate(-45deg);
+      }
+    }
+  }
+
+  @include small-tablet {
+    display: block;
+  }
+}
+
+/* Меню, которое будет появляться */
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 15px;
+  background: #fff;
+  transform: translateX(100%);
+  transition: transform 0.5s;
+  z-index: 25;
+
+  &.active {
+    transform: translateX(0);
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  &__item {
+    padding: 16px 0;
+    border-bottom: 1px solid #dde2e6;
+  }
+
+  &__text {
+    color: #373a48;
+    text-shadow: 0px 0px 4px rgba(55, 58, 72, 0.2);
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
   }
 }
