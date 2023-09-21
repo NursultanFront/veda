@@ -8,8 +8,8 @@ function openModalWithSwiper() {
   modalSwiper = new Swiper(".modal .modal-content", {
     slidesPerView: 1,
     navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
+      nextEl: ".slider-next",
+      prevEl: ".slider-prev",
     },
     pagination: {
       el: ".swiper-pagination",
@@ -59,3 +59,19 @@ if (gallery) {
     }
   });
 }
+
+const contactModal = document.getElementById("contact-modal");
+const closeModalBtn = contactModal.querySelector(".close");
+
+// Функция для открытия модального окна
+function openContactModal() {
+  contactModal.style.display = "flex";
+}
+
+// Функция для закрытия модального окна
+function closeContactModal() {
+  contactModal.style.display = "none";
+}
+
+// Обработчик события закрытия
+closeModalBtn.addEventListener("click", closeContactModal);

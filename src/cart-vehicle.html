@@ -25,17 +25,21 @@
   <body class="page__body">
     <div class="modal" id="modal-slider">
       <div class="modal-content">
-        <div class="swiper-wrapper">
-          <!-- Сюда будут добавляться слайды из вашей галереи -->
-        </div>
-        <!-- Навигационные кнопки Swiper -->
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-        <!-- Пагинация Swiper -->
-        <div class="swiper-pagination"></div>
+        <div class="swiper-wrapper"></div>
+
+        <button class="slider-button slider-prev">
+          <svg>
+            <use xlink:href="img/sprite.svg#left-arrow"></use>
+          </svg>
+        </button>
+
+        <button class="slider-button slider-next">
+          <svg>
+            <use xlink:href="img/sprite.svg#right-arrow"></use>
+          </svg>
+        </button>
+        <span id="close-image-modal" class="close">&times;</span>
       </div>
-      <!-- Кнопка закрытия модального окна -->
-      <span id="close-image-modal" class="close">&times;</span>
     </div>
     <header class="header">
       <div class="container">
