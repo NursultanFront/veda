@@ -36,6 +36,10 @@
 
     @include tablet {
       @include text-style(16px, 400, var(--blue-color));
+
+      &:hover {
+        @include text-style(16px, 400, var(--orange-color));
+      }
     }
   }
 }

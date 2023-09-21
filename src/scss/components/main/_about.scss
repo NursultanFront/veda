@@ -9,6 +9,12 @@
     line-height: 117%;
     text-transform: uppercase;
     @include text-style(24px, 400, var(--gray-color));
+
+    display: flex;
+
+    @include tablet {
+      display: none;
+    }
   }
   &__box {
     padding: 34px 0;
@@ -16,6 +22,19 @@
     justify-content: space-between;
     border-top: 1px solid #dde2e6;
     border-bottom: 1px solid #dde2e6;
+
+    .about__title {
+      display: none;
+
+      @include tablet {
+        display: flex;
+      }
+    }
+
+    @include mobile {
+      display: flex;
+      flex-direction: column;
+    }
   }
 
   &__buttons {
@@ -32,12 +51,32 @@
   }
 
   &__info {
+    @include mobile {
+      display: flex;
+      flex-direction: column;
+    }
   }
   &__number {
     @include text-style(115px, 400, var(--orange-color));
+
+    @include small-tablet {
+      @include text-style(76px, 400, var(--orange-color));
+    }
+
+    @include mobile {
+      align-self: center;
+    }
   }
   &__text {
     @include text-style(16px, 400, #202020);
+
+    @include small-tablet {
+      @include text-style(10px, 400, #202020);
+    }
+
+    @include mobile {
+      align-self: center;
+    }
   }
   &__content {
     display: flex;
@@ -48,9 +87,17 @@
   }
   &__caption {
     @include text-style(24px, 400, #373a48);
+
+    @include small-tablet {
+      @include text-style(18px, 400, #373a48);
+    }
   }
   &__descr {
     @include text-style(16px, 400, #373a48);
+
+    @include small-tablet {
+      @include text-style(14px, 400, #373a48);
+    }
   }
 }
 
