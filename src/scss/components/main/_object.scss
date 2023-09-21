@@ -1,6 +1,12 @@
 .object {
   padding: 284px 0 110px;
 
+  .container {
+    @include small-tablet {
+      padding: 0;
+    }
+  }
+
   &__wrapper {
     display: flex;
     flex-direction: column;
@@ -31,6 +37,12 @@
       width: 100%;
       height: 100%;
       object-fit: cover;
+    }
+  }
+
+  @include small-tablet {
+    .site-link {
+      display: none;
     }
   }
 }
