@@ -10,6 +10,10 @@
     line-height: 123.5%; /* 39.52px */
 
     @include text-style(32px, 500, #373a48);
+
+    @include small-tablet {
+      @include text-style(22px, 500, #373a48);
+    }
   }
 
   &__content {
@@ -57,16 +61,28 @@
     text-transform: uppercase;
 
     @include text-style(32px, 400, #373a48);
+
+    @include small-tablet {
+      @include text-style(22px, 400, #373a48);
+    }
   }
   &__number {
     text-transform: uppercase;
 
     @include text-style(32px, 400, #f4951f);
+
+    @include small-tablet {
+      @include text-style(22px, 400, #f4951f);
+    }
   }
   &__descr {
     line-height: 160%; /* 25.6px */
 
     @include text-style(16px, 400, #373a48);
+
+    @include small-tablet {
+      @include text-style(13px, 400, #373a48);
+    }
   }
 
   @media (max-width: 1250px) {
@@ -128,6 +144,10 @@
     font-style: normal;
     font-weight: 500;
     line-height: 123.5%; /* 21.115px */
+
+    @include mobile {
+      font-size: 13px;
+    }
   }
   &__link {
     color: #f4951f;
@@ -136,5 +156,9 @@
     font-style: normal;
     font-weight: 400;
     line-height: 40.755px; /* 271.226% */
+
+    @include mobile {
+      font-size: 12px;
+    }
   }
 }
