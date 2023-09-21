@@ -150,6 +150,22 @@ input {
 }
 
 .site-title {
+  color: #373a48;
+  font-family: Montserrat;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 117%;
+  text-transform: uppercase;
+
+  @include text-style(32px, 400, var(--gray-color));
+
+  @include mobile {
+    line-height: 117%;
+    text-transform: uppercase;
+
+    @include text-style(20px, 400, var(--gray-color));
+  }
 }
 .site-title-box {
   display: flex;

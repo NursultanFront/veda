@@ -27,11 +27,25 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
+
+    @include small-tablet {
+      grid-template-columns: 1fr;
+    }
   }
   &__card {
     overflow: hidden;
     position: relative;
     height: 216px;
+  }
+
+  .site-link {
+    @include small-tablet {
+      display: none;
+    }
+  }
+
+  .orange-button {
+    align-self: center;
   }
 }
 
@@ -85,19 +99,19 @@
   }
 
   &__title {
-    color: #fff;
-    font-family: Montserrat;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 400;
     line-height: 117%; /* 28.08px */
+
+    @include text-style(24px, 400, var(--light-color));
+
+    @include mobile {
+      @include text-style(16px, 400, var(--light-color));
+    }
   }
   &__link {
-    color: #fff;
-    font-family: Montserrat;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+    @include text-style(16px, 400, var(--light-color));
+
+    @include mobile {
+      display: none;
+    }
   }
 }
