@@ -48,12 +48,16 @@
 
   .contact__wrapper {
     position: relative;
-    width: 80%;
 
     .close {
       top: -54px;
       right: 0px;
       font-size: 50px;
+    }
+
+    .form__right {
+      flex-grow: 1;
+      padding: 50px;
     }
   }
 }

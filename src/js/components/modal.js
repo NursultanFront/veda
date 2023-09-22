@@ -63,6 +63,8 @@ if (gallery) {
 const contactModal = document.getElementById("contact-modal");
 const closeModalBtn = contactModal.querySelector(".close");
 
+const contactButton = document.querySelectorAll(".modal-open__btn");
+
 // Функция для открытия модального окна
 function openContactModal() {
   contactModal.style.display = "flex";
@@ -75,3 +77,9 @@ function closeContactModal() {
 
 // Обработчик события закрытия
 closeModalBtn.addEventListener("click", closeContactModal);
+
+contactButton.forEach((item, i) => {
+  item.addEventListener("click", () => {
+    openContactModal();
+  });
+});
