@@ -68,8 +68,13 @@
       width: 100%;
       flex-direction: column;
 
+      .orange-button {
+        text-align: center;
+      }
+
       @include small-tablet {
         display: flex;
+        flex-direction: column-reverse;
       }
 
       .orange-button {

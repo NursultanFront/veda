@@ -6,10 +6,42 @@
   }
   &__img {
     position: relative;
+
+    &:hover {
+      .blur-horizontal {
+        right: 30%;
+      }
+    }
+
+    @include mobile {
+      .blur-horizontal {
+        justify-content: flex-start;
+      }
+    }
   }
 
   &__box {
     padding: 38px;
+
+    @include mobile {
+      padding: 10px;
+
+      position: absolute;
+
+      border-top: 0.529px solid #fff;
+      background: linear-gradient(
+        90deg,
+        rgba(13, 13, 13, 0.4) 0%,
+        rgba(58, 58, 58, 0.4) 100%
+      );
+      backdrop-filter: blur(3.1724915504455566px);
+
+      z-index: 2;
+      top: 50%;
+      left: 0;
+      bottom: 0;
+      right: 0;
+    }
   }
 
   &__title {
@@ -19,6 +51,15 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+
+    @include small-tablet {
+      color: #fff;
+      font-family: Montserrat;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
   }
 
   &__holder {
