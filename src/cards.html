@@ -27,7 +27,72 @@
   </head>
 
   <body class="page__body">
-    <header class="header">
+    <div id="contact-modal" class="modal">
+      <div class="modal-content">
+        <div class="contact__wrapper">
+          <form class="form">
+            <div class="form__wrapper">
+              <div class="form__right">
+                <div class="form__box">
+                  <input
+                    class="form__input"
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Имя"
+                    required
+                  />
+                  <input
+                    class="form__input"
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    placeholder="Телефон"
+                    required
+                  />
+                </div>
+
+                <div class="form__box">
+                  <input
+                    class="form__input"
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Почта"
+                    required
+                  />
+
+                  <div></div>
+                </div>
+                <div class="form__box">
+                  <input
+                    class="form__input"
+                    type="text"
+                    id="comments"
+                    name="comments"
+                    placeholder="Комментарии"
+                  />
+                </div>
+                <div class="form__footer">
+                  <div class="form__change">
+                    <input class="form__checkbox" type="checkbox" id="agree" />
+                    <span class="form__check"></span>
+                    <label for="agree" class="form__label">
+                      Вы соглашаетесь с обработкой <br />
+                      персональных данных
+                    </label>
+                  </div>
+
+                  <button type="submit" class="orange-button">Отправить</button>
+                </div>
+              </div>
+            </div>
+          </form>
+          <span class="close">&times;</span>
+        </div>
+      </div>
+    </div>
+    <header id="header" class="header">
       <div class="container">
         <div class="header__wrapper">
           <a href="/" class="header__logo">
@@ -36,26 +101,72 @@
           <nav class="header__nav nav">
             <ul class="nav__list">
               <li class="nav__item">
-                <a href="#" class="nav__text"> info@skveda.ru </a>
+                <a href="mailto:info@skveda.ru" class="nav__text">
+                  info@skveda.ru
+                </a>
               </li>
               <li class="nav__item">
-                <a href="#" class="nav__text">+7 (916) 111-55-47</a>
+                <a href="tel:+79161115547" class="nav__text"
+                  >+7 (916) 111-55-47</a
+                >
               </li>
               <li class="nav__item">
-                <a href="#" class="nav__text">+7 (495) 799-90-17</a>
+                <a href="tel:+74957999017" class="nav__text"
+                  >+7 (495) 799-90-17</a
+                >
               </li>
             </ul>
           </nav>
+
+          <div class="menu-btn">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
         </div>
       </div>
     </header>
+
+    <div class="menu__nav">
+      <nav class="menu">
+        <a href="/" class="menu__link">
+          <img src="img/icons/logo.svg" alt="Лого" />
+        </a>
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a href="catalog.html" class="menu__text"> Каталог спецтехники </a>
+          </li>
+          <li class="menu__item">
+            <a href="services.html" class="menu__text">Услуги</a>
+          </li>
+          <li class="menu__item">
+            <a href="project.html" class="menu__text">Наши объекты</a>
+          </li>
+          <li class="menu__item">
+            <a href="contacts.html" class="menu__text">Контакты</a>
+          </li>
+
+          <li class="menu__item">
+            <a href="tel:+74957999017" class="nav__text">+7 (916) 111-55-47</a>
+          </li>
+          <li class="menu__item">
+            <a href="tel:+74957999017" class="nav__text">+7 (495) 799-90-17</a>
+          </li>
+          <li class="menu__item">
+            <a href="mailto:info@skveda.ru" class="nav__text">
+              info@skveda.ru
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
 
     <section class="subheader">
       <div class="container">
         <div class="subheader__wrapper">
           <a href="catalog.html" class="subheader__text">Каталог спецтехники</a>
-          <a href="#" class="subheader__text">Услуги</a>
-          <a href="#" class="subheader__text">Наши объекты</a>
+          <a href="services.html" class="subheader__text">Услуги</a>
+          <a href="project.html" class="subheader__text">Наши объекты</a>
           <a href="contacts.html" class="subheader__text">Контакты</a>
         </div>
       </div>
@@ -65,10 +176,10 @@
       <div class="breadcrumbs">
         <a class="breadcrumbs__text" href="index.html">Главная</a>
         <span>/</span>
-        <a
-          class="breadcrumbs__text breadcrumbs__text--active"
-          href="catalog.html"
-          >Услуги</a
+        <a class="breadcrumbs__text" href="catalog.html">Каталог</a>
+        <span>/</span>
+        <a class="breadcrumbs__text breadcrumbs__text--active" href="#"
+          >Краны</a
         >
       </div>
     </div>
@@ -105,7 +216,9 @@
               </div>
               <div class="aside-card__title">Тип техники</div>
               <div class="aside-card__holder aside-card__holder--collapsed">
-                <button class="aside-card__text">Бульдозеры</button>
+                <button class="aside-card__text aside-card__text--active">
+                  Бульдозеры
+                </button>
                 <button class="aside-card__text">Бульдозеры</button>
                 <button class="aside-card__text">Бульдозеры</button>
                 <button class="aside-card__text">Бульдозеры</button>
@@ -151,7 +264,7 @@
                   <span>т</span>
                 </div>
               </div>
-              <div id="range-slider-mass"></div>
+              <div class="range-slider-mass"></div>
             </div>
 
             <div class="aside-card__item">
@@ -169,7 +282,7 @@
                   <span>т</span>
                 </div>
               </div>
-              <div id="range-slider-length"></div>
+              <div class="range-slider-length"></div>
             </div>
 
             <div class="aside-card__item">
@@ -187,7 +300,7 @@
                   <span>т</span>
                 </div>
               </div>
-              <div id="range-slider-volume"></div>
+              <div class="range-slider-volume"></div>
             </div>
 
             <div class="aside-card__item">
@@ -205,7 +318,7 @@
                   <span>т</span>
                 </div>
               </div>
-              <div id="range-slider-price"></div>
+              <div class="range-slider-price"></div>
             </div>
 
             <button class="aside-card__reset reset-filter">
@@ -215,6 +328,179 @@
           <div class="cards__inner">
             <div class="cards__pop">
               <h2 class="cards__title">Представлено 6 видов</h2>
+              <select class="js-choice">
+                <option value="value1">Сначала не дорогие</option>
+                <option value="value2">Допишите варианты</option>
+                <option value="value3">Допишите варианты</option>
+              </select>
+            </div>
+
+            <div class="cards__filters filters">
+              <div class="accordion">
+                <div class="accordion-label">
+                  <div class="accrodion-preview">
+                    <div class="accrodion-preview__value">Фильтры</div>
+                  </div>
+                  <img
+                    src="img/icons/arrow-down.svg"
+                    class="accordion-label__icon"
+                    alt="Arrow Down"
+                  />
+                </div>
+                <div class="accordion-content">
+                  <!-- Здесь ваш список элементов -->
+                  <div class="filters__accordion">
+                    <div class="filters__options">
+                      <div class="aside-card__item">
+                        <div class="site-input-box">
+                          <input
+                            class="site-input"
+                            type="text"
+                            placeholder="Поиск"
+                          />
+                          <svg
+                            class="site-search-icon"
+                            width="23"
+                            height="22"
+                            viewBox="0 0 23 22"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <circle
+                              cx="10.3737"
+                              cy="9.6546"
+                              r="6.49204"
+                              transform="rotate(110.626 10.3737 9.6546)"
+                              stroke="#AFAFAF"
+                              stroke-width="1.76304"
+                            />
+                            <path
+                              d="M14.2463 13.2315L22.0668 21.0519"
+                              stroke="#AFAFAF"
+                              stroke-width="1.76304"
+                            />
+                          </svg>
+                        </div>
+                        <div class="aside-card__title">Тип техники</div>
+                        <div
+                          class="aside-card__holder aside-card__holder--collapsed"
+                        >
+                          <button
+                            class="aside-card__text aside-card__text--active"
+                          >
+                            Бульдозеры
+                          </button>
+                          <button class="aside-card__text">Бульдозеры</button>
+                          <button class="aside-card__text">Бульдозеры</button>
+                          <button class="aside-card__text">Бульдозеры</button>
+                          <button class="aside-card__text">Бульдозеры</button>
+                          <button class="aside-card__text">Бульдозеры</button>
+                          <button class="aside-card__text">Бульдозеры</button>
+                          <button class="aside-card__text">Бульдозеры</button>
+                          <button class="aside-card__text">Бульдозеры</button>
+                          <button class="aside-card__text">Бульдозеры</button>
+                          <button class="aside-card__text">Бульдозеры</button>
+                          <button class="aside-card__text">Бульдозеры</button>
+                        </div>
+                        <button class="aside-card__button">
+                          <span>Еще</span>
+                          <svg
+                            width="11"
+                            height="6"
+                            viewBox="0 0 11 6"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="aside-card__arrow"
+                          >
+                            <path
+                              d="M5.36942 5.78021C5.63327 6.04406 6.06106 6.04406 6.32492 5.78021L10.6246 1.48048C10.8885 1.21662 10.8885 0.788834 10.6246 0.524981C10.3608 0.261128 9.93301 0.261128 9.66915 0.524981L5.84717 4.34697L2.02518 0.524981C1.76133 0.261128 1.33354 0.261128 1.06969 0.524981C0.805834 0.788834 0.805834 1.21662 1.06969 1.48048L5.36942 5.78021ZM5.17153 4.40161V5.30246H6.52281V4.40161H5.17153Z"
+                              fill="#AFAFAF"
+                            />
+                          </svg>
+                        </button>
+                      </div>
+
+                      <div class="aside-card__item">
+                        <div class="aside-card__title">Грузоподъемность</div>
+                        <div class="aside-card__box">
+                          <div class="aside-card__number">
+                            <span>от</span>
+                            <span class="mass-from">26</span>
+                            <span>т</span>
+                          </div>
+
+                          <div class="aside-card__number">
+                            <span>до</span>
+                            <span class="mass-to">26</span>
+                            <span>т</span>
+                          </div>
+                        </div>
+                        <div class="range-slider-mass"></div>
+                      </div>
+
+                      <div class="aside-card__item">
+                        <div class="aside-card__title">Грузоподъемность</div>
+                        <div class="aside-card__box">
+                          <div class="aside-card__number">
+                            <span>от</span>
+                            <span class="length-from">26</span>
+                            <span>т</span>
+                          </div>
+
+                          <div class="aside-card__number">
+                            <span>до</span>
+                            <span class="length-to">26</span>
+                            <span>т</span>
+                          </div>
+                        </div>
+                        <div class="range-slider-length"></div>
+                      </div>
+
+                      <div class="aside-card__item">
+                        <div class="aside-card__title">Грузоподъемность</div>
+                        <div class="aside-card__box">
+                          <div class="aside-card__number">
+                            <span>от</span>
+                            <span class="volume-from">26</span>
+                            <span>т</span>
+                          </div>
+
+                          <div class="aside-card__number">
+                            <span>до</span>
+                            <span class="volume-to">26</span>
+                            <span>т</span>
+                          </div>
+                        </div>
+                        <div class="range-slider-volume"></div>
+                      </div>
+
+                      <div class="aside-card__item">
+                        <div class="aside-card__title">Грузоподъемность</div>
+                        <div class="aside-card__box">
+                          <div class="aside-card__number">
+                            <span>от</span>
+                            <span class="price-from">26</span>
+                            <span>т</span>
+                          </div>
+
+                          <div class="aside-card__number">
+                            <span>до</span>
+                            <span class="price-to">26</span>
+                            <span>т</span>
+                          </div>
+                        </div>
+                        <div class="range-slider-price"></div>
+                      </div>
+
+                      <button class="aside-card__reset reset-filter">
+                        Сбросить фильтры
+                      </button>
+                    </div>
+                  </div>
+                  <!-- Добавьте другие элементы по аналогии -->
+                </div>
+              </div>
+
               <select class="js-choice">
                 <option value="value1">Сначала не дорогие</option>
                 <option value="value2">Допишите варианты</option>
@@ -390,7 +676,7 @@
       </div>
     </section>
 
-    <section class="contact">
+    <section id="contacts" class="contact">
       <div class="container">
         <div class="contact__wrapper">
           <div class="site-title-box">
@@ -452,12 +738,14 @@
                   />
                 </div>
                 <div class="form__footer">
-                  <input class="form__checkbox" type="checkbox" id="agree" />
-                  <span class="form__check"></span>
-                  <label for="agree" class="form__label">
-                    Вы соглашаетесь с обработкой <br />
-                    персональных данных
-                  </label>
+                  <div class="form__change">
+                    <input class="form__checkbox" type="checkbox" id="agree" />
+                    <span class="form__check"></span>
+                    <label for="agree" class="form__label">
+                      Вы соглашаетесь с обработкой <br />
+                      персональных данных
+                    </label>
+                  </div>
 
                   <button type="submit" class="orange-button">Отправить</button>
                 </div>
@@ -471,33 +759,50 @@
     <footer class="footer">
       <div class="container">
         <div class="footer__wrapper">
-          <a href="#" class="header__logo">
-            <img src="img//logo.svg" alt="Лого" />
-          </a>
+          <div class="site-title-box">
+            <a href="/" class="header__logo">
+              <img src="img/logo.svg" alt="Лого" />
+            </a>
+            <a href="#header" class="footer__btn">
+              <svg>
+                <use xlink:href="img/sprite.svg#top-arrow"></use>
+              </svg>
+            </a>
+          </div>
 
           <nav class="footer__nav">
             <ul class="footer__list">
-              <li class="footer__item">
-                <a href="#" class="footer__link">Каталог ТС</a>
-              </li>
-              <li class="footer__item">
-                <a href="#" class="footer__link">Услуги</a>
-              </li>
-              <li class="footer__item">
-                <a href="#" class="footer__link">Наши объекты</a>
-              </li>
-              <li class="footer__item">
-                <a href="#" class="footer__link">Контакты</a>
-              </li>
-              <li class="footer__item">
-                <a href="#" class="footer__link">+7 (495) 799-90-17</a>
-              </li>
-              <li class="footer__item">
-                <a href="#" class="footer__link">+7 (916) 111-55-47</a>
-              </li>
-              <li class="footer__item">
-                <a href="#" class="footer__link">info@skveda.ru</a>
-              </li>
+              <div class="footer__left">
+                <li class="footer__item">
+                  <a href="catalog.html" class="footer__link">Каталог ТС</a>
+                </li>
+                <li class="footer__item">
+                  <a href="services.html" class="footer__link">Услуги</a>
+                </li>
+                <li class="footer__item">
+                  <a href="project.html" class="footer__link">Наши объекты</a>
+                </li>
+                <li class="footer__item">
+                  <a href="contacts.html" class="footer__link">Контакты</a>
+                </li>
+              </div>
+              <div class="footer__right">
+                <li class="footer__item">
+                  <a href="tel:+74957999017" class="footer__link"
+                    >+7 (495) 799-90-17</a
+                  >
+                </li>
+                <li class="footer__item">
+                  <a href="tel:+79161115547" class="footer__link"
+                    >+7 (916) 111-55-47</a
+                  >
+                </li>
+                <li class="footer__item">
+                  <a href="mailto:info@skveda.ru" class="footer__link"
+                    >info@skveda.ru</a
+                  >
+                </li>
+              </div>
             </ul>
           </nav>
         </div>
