@@ -76,6 +76,10 @@
     top: 50%;
     transform: translateY(-50%);
     z-index: 15;
+
+    @media (max-width: 950px) {
+      display: none;
+    }
   }
 
   .slider-next {
@@ -90,5 +94,17 @@
     top: -50px;
     right: 31%;
     font-size: 50px;
+
+    @media (max-width: 1024px) {
+      right: 25%;
+    }
+
+    @media (max-width: 950px) {
+      right: 20%;
+    }
+
+    @media (max-width: 950px) {
+      right: 10%;
+    }
   }
 }

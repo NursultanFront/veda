@@ -77,7 +77,7 @@ const gallerySlider = new Swiper(".gallery__wrapper", {
   slidesPerView: 3,
   grid: {
     fill: "row",
-    rows: 2,
+    rows: 1,
   },
   spaceBetween: 10,
   navigation: {
@@ -87,5 +87,14 @@ const gallerySlider = new Swiper(".gallery__wrapper", {
   pagination: {
     el: ".gallery-slider-pag",
     clickable: true,
+  },
+
+  breakpoints: {
+    768: {
+      grid: {
+        fill: "row",
+        rows: 2,
+      },
+    },
   },
 });

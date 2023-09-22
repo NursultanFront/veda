@@ -41,7 +41,73 @@
         <span id="close-image-modal" class="close">&times;</span>
       </div>
     </div>
-    <header class="header">
+
+    <div id="contact-modal" class="modal">
+      <div class="modal-content">
+        <div class="contact__wrapper">
+          <form class="form">
+            <div class="form__wrapper">
+              <div class="form__right">
+                <div class="form__box">
+                  <input
+                    class="form__input"
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Имя"
+                    required
+                  />
+                  <input
+                    class="form__input"
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    placeholder="Телефон"
+                    required
+                  />
+                </div>
+
+                <div class="form__box">
+                  <input
+                    class="form__input"
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Почта"
+                    required
+                  />
+
+                  <div></div>
+                </div>
+                <div class="form__box">
+                  <input
+                    class="form__input"
+                    type="text"
+                    id="comments"
+                    name="comments"
+                    placeholder="Комментарии"
+                  />
+                </div>
+                <div class="form__footer">
+                  <div class="form__change">
+                    <input class="form__checkbox" type="checkbox" id="agree" />
+                    <span class="form__check"></span>
+                    <label for="agree" class="form__label">
+                      Вы соглашаетесь с обработкой <br />
+                      персональных данных
+                    </label>
+                  </div>
+
+                  <button type="submit" class="orange-button">Отправить</button>
+                </div>
+              </div>
+            </div>
+          </form>
+          <span class="close">&times;</span>
+        </div>
+      </div>
+    </div>
+    <header id="header" class="header">
       <div class="container">
         <div class="header__wrapper">
           <a href="/" class="header__logo">
@@ -50,26 +116,72 @@
           <nav class="header__nav nav">
             <ul class="nav__list">
               <li class="nav__item">
-                <a href="#" class="nav__text"> info@skveda.ru </a>
+                <a href="mailto:info@skveda.ru" class="nav__text">
+                  info@skveda.ru
+                </a>
               </li>
               <li class="nav__item">
-                <a href="#" class="nav__text">+7 (916) 111-55-47</a>
+                <a href="tel:+79161115547" class="nav__text"
+                  >+7 (916) 111-55-47</a
+                >
               </li>
               <li class="nav__item">
-                <a href="#" class="nav__text">+7 (495) 799-90-17</a>
+                <a href="tel:+74957999017" class="nav__text"
+                  >+7 (495) 799-90-17</a
+                >
               </li>
             </ul>
           </nav>
+
+          <div class="menu-btn">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
         </div>
       </div>
     </header>
+
+    <div class="menu__nav">
+      <nav class="menu">
+        <a href="/" class="menu__link">
+          <img src="img/icons/logo.svg" alt="Лого" />
+        </a>
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a href="catalog.html" class="menu__text"> Каталог спецтехники </a>
+          </li>
+          <li class="menu__item">
+            <a href="services.html" class="menu__text">Услуги</a>
+          </li>
+          <li class="menu__item">
+            <a href="project.html" class="menu__text">Наши объекты</a>
+          </li>
+          <li class="menu__item">
+            <a href="contacts.html" class="menu__text">Контакты</a>
+          </li>
+
+          <li class="menu__item">
+            <a href="tel:+74957999017" class="nav__text">+7 (916) 111-55-47</a>
+          </li>
+          <li class="menu__item">
+            <a href="tel:+74957999017" class="nav__text">+7 (495) 799-90-17</a>
+          </li>
+          <li class="menu__item">
+            <a href="mailto:info@skveda.ru" class="nav__text">
+              info@skveda.ru
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
 
     <section class="subheader">
       <div class="container">
         <div class="subheader__wrapper">
           <a href="catalog.html" class="subheader__text">Каталог спецтехники</a>
-          <a href="#" class="subheader__text">Услуги</a>
-          <a href="#" class="subheader__text">Наши объекты</a>
+          <a href="services.html" class="subheader__text">Услуги</a>
+          <a href="project.html" class="subheader__text">Наши объекты</a>
           <a href="contacts.html" class="subheader__text">Контакты</a>
         </div>
       </div>
@@ -79,10 +191,10 @@
       <div class="breadcrumbs">
         <a class="breadcrumbs__text" href="index.html">Главная</a>
         <span>/</span>
-        <a
-          class="breadcrumbs__text breadcrumbs__text--active"
-          href="catalog.html"
-          >Каталог спецтехники</a
+        <a class="breadcrumbs__text" href="catalog.html">Каталог спецтехники</a>
+        <span>/</span>
+        <a href="#" class="breadcrumbs__text breadcrumbs__text--active"
+          >Автокран 32 т 31 м - Ивановец КС 55717К-1</a
         >
       </div>
     </div>
@@ -91,11 +203,11 @@
       <div class="container">
         <div class="vehicle__wrapper">
           <div class="vehicle__aside aside-nav">
-            <a href="#" class="aside-nav__item aside-nav__item--active"
+            <a href="#descr" class="aside-nav__item aside-nav__item--active"
               >Описание</a
             >
-            <a href="#" class="aside-nav__item">Характеристика</a>
-            <a href="#" class="aside-nav__item">Галерея</a>
+            <a href="#char" class="aside-nav__item">Характеристика</a>
+            <a href="#gallery" class="aside-nav__item">Галерея</a>
           </div>
           <div class="vehicle__more-info more-info">
             <div class="more-info__content">
@@ -123,14 +235,14 @@
                     <div class="card-info__option">за час</div>
                   </div>
                 </div>
-                <button class="orange-button card-info__button">
+                <button class="orange-button card-info__button modal-open__btn">
                   Заказать
                 </button>
               </div>
             </div>
 
-            <div class="more-info__descr">
-              <h2 class="more-info__title">Описание</h2>
+            <div id="descr" class="more-info__descr">
+              <h2 class="more-info__title site-title">Описание</h2>
               <div class="more-info__list">
                 <div class="more-info__card">
                   <picture>
@@ -199,8 +311,8 @@
               </div>
             </div>
 
-            <div class="more-info__feature feature">
-              <h2>Характеристика</h2>
+            <div id="char" class="more-info__feature feature">
+              <h2 class="site-title">Характеристика</h2>
               <div class="feature__list">
                 <div class="feature__item">
                   <div class="feature__text">Объем ковша</div>
@@ -221,8 +333,8 @@
               </div>
             </div>
 
-            <div class="more-info__gallery gallery">
-              <h2>Галерея</h2>
+            <div id="gallery" class="more-info__gallery gallery">
+              <h2 class="site-title">Галерея</h2>
               <div class="gallery__wrapper site-slider">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide">
@@ -402,7 +514,7 @@
       </div>
     </section>
 
-    <section class="contact">
+    <section id="contacts" class="contact">
       <div class="container">
         <div class="contact__wrapper">
           <div class="site-title-box">
@@ -464,12 +576,14 @@
                   />
                 </div>
                 <div class="form__footer">
-                  <input class="form__checkbox" type="checkbox" id="agree" />
-                  <span class="form__check"></span>
-                  <label for="agree" class="form__label">
-                    Вы соглашаетесь с обработкой <br />
-                    персональных данных
-                  </label>
+                  <div class="form__change">
+                    <input class="form__checkbox" type="checkbox" id="agree" />
+                    <span class="form__check"></span>
+                    <label for="agree" class="form__label">
+                      Вы соглашаетесь с обработкой <br />
+                      персональных данных
+                    </label>
+                  </div>
 
                   <button type="submit" class="orange-button">Отправить</button>
                 </div>
@@ -479,36 +593,54 @@
         </div>
       </div>
     </section>
+
     <footer class="footer">
       <div class="container">
         <div class="footer__wrapper">
-          <a href="#" class="header__logo">
-            <img src="img//logo.svg" alt="Лого" />
-          </a>
+          <div class="site-title-box">
+            <a href="/" class="header__logo">
+              <img src="img/logo.svg" alt="Лого" />
+            </a>
+            <a href="#header" class="footer__btn">
+              <svg>
+                <use xlink:href="img/sprite.svg#top-arrow"></use>
+              </svg>
+            </a>
+          </div>
 
           <nav class="footer__nav">
             <ul class="footer__list">
-              <li class="footer__item">
-                <a href="#" class="footer__link">Каталог ТС</a>
-              </li>
-              <li class="footer__item">
-                <a href="#" class="footer__link">Услуги</a>
-              </li>
-              <li class="footer__item">
-                <a href="#" class="footer__link">Наши объекты</a>
-              </li>
-              <li class="footer__item">
-                <a href="#" class="footer__link">Контакты</a>
-              </li>
-              <li class="footer__item">
-                <a href="#" class="footer__link">+7 (495) 799-90-17</a>
-              </li>
-              <li class="footer__item">
-                <a href="#" class="footer__link">+7 (916) 111-55-47</a>
-              </li>
-              <li class="footer__item">
-                <a href="#" class="footer__link">info@skveda.ru</a>
-              </li>
+              <div class="footer__left">
+                <li class="footer__item">
+                  <a href="catalog.html" class="footer__link">Каталог ТС</a>
+                </li>
+                <li class="footer__item">
+                  <a href="services.html" class="footer__link">Услуги</a>
+                </li>
+                <li class="footer__item">
+                  <a href="project.html" class="footer__link">Наши объекты</a>
+                </li>
+                <li class="footer__item">
+                  <a href="contacts.html" class="footer__link">Контакты</a>
+                </li>
+              </div>
+              <div class="footer__right">
+                <li class="footer__item">
+                  <a href="tel:+74957999017" class="footer__link"
+                    >+7 (495) 799-90-17</a
+                  >
+                </li>
+                <li class="footer__item">
+                  <a href="tel:+79161115547" class="footer__link"
+                    >+7 (916) 111-55-47</a
+                  >
+                </li>
+                <li class="footer__item">
+                  <a href="mailto:info@skveda.ru" class="footer__link"
+                    >info@skveda.ru</a
+                  >
+                </li>
+              </div>
             </ul>
           </nav>
         </div>
