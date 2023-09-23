@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="theme-color" content="#111111" />
+    <title>MaxGraph New Site</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/vendor.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <script defer src="js/main.js"></script>
+  </head>
+
+  <body class="page__body">
+    <div id="contact-modal" class="modal">
+      <div class="modal-content">
+        <div class="contact__wrapper">
+          <form class="form">
+            <div class="form__wrapper">
+              <div class="form__right">
+                <div class="form__box">
+                  <input
+                    class="form__input"
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Имя"
+                    required
+                  />
+                  <input
+                    class="form__input"
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    placeholder="Телефон"
+                    required
+                  />
+                </div>
+
+                <div class="form__box">
+                  <input
+                    class="form__input"
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Почта"
+                    required
+                  />
+
+                  <div></div>
+                </div>
+                <div class="form__box">
+                  <input
+                    class="form__input"
+                    type="text"
+                    id="comments"
+                    name="comments"
+                    placeholder="Комментарии"
+                  />
+                </div>
+                <div class="form__footer">
+                  <div class="form__change">
+                    <input class="form__checkbox" type="checkbox" id="agree" />
+                    <span class="form__check"></span>
+                    <label for="agree" class="form__label">
+                      Вы соглашаетесь с обработкой <br />
+                      персональных данных
+                    </label>
+                  </div>
+
+                  <button type="submit" class="orange-button">Отправить</button>
+                </div>
+              </div>
+            </div>
+          </form>
+          <span class="close">&times;</span>
+        </div>
+      </div>
+    </div>
+    <header id="header" class="header">
+      <div class="container">
+        <div class="header__wrapper">
+          <a href="/" class="header__logo">
+            <img src="img/logo.svg" alt="Лого" />
+          </a>
+          <nav class="header__nav nav">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a href="mailto:info@skveda.ru" class="nav__text">
+                  info@skveda.ru
+                </a>
+              </li>
+              <li class="nav__item">
+                <a href="tel:+79161115547" class="nav__text"
+                  >+7 (916) 111-55-47</a
+                >
+              </li>
+              <li class="nav__item">
+                <a href="tel:+74957999017" class="nav__text"
+                  >+7 (495) 799-90-17</a
+                >
+              </li>
+            </ul>
+          </nav>
+
+          <div class="menu-btn">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="menu__nav">
+      <nav class="menu">
+        <a href="/" class="menu__link">
+          <img src="img/icons/logo.svg" alt="Лого" />
+        </a>
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a href="catalog.html" class="menu__text"> Каталог спецтехники </a>
+          </li>
+          <li class="menu__item">
+            <a href="services.html" class="menu__text">Услуги</a>
+          </li>
+          <li class="menu__item">
+            <a href="project.html" class="menu__text">Наши объекты</a>
+          </li>
+          <li class="menu__item">
+            <a href="contacts.html" class="menu__text">Контакты</a>
+          </li>
+
+          <li class="menu__item">
+            <a href="tel:+74957999017" class="nav__text">+7 (916) 111-55-47</a>
+          </li>
+          <li class="menu__item">
+            <a href="tel:+74957999017" class="nav__text">+7 (495) 799-90-17</a>
+          </li>
+          <li class="menu__item">
+            <a href="mailto:info@skveda.ru" class="nav__text">
+              info@skveda.ru
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <section class="subheader">
+      <div class="container">
+        <div class="subheader__wrapper">
+          <a href="catalog.html" class="subheader__text">Каталог спецтехники</a>
+          <a href="services.html" class="subheader__text">Услуги</a>
+          <a href="project.html" class="subheader__text">Наши объекты</a>
+          <a href="contacts.html" class="subheader__text">Контакты</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="margin-inner">
+      <div class="container">
+        <div class="breadcrumbs">
+          <a class="breadcrumbs__text" href="index.html">Главная</a>
+          <span>/</span>
+          <a class="breadcrumbs__text">404</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="not-found margin-inner">
+      <div class="container">
+        <div class="not-found__wrapper">
+          <div class="not-found__number">404</div>
+          <div class="not-found__text">
+            СТРАНИЦА <br />
+            НЕ НАЙДЕНА
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer margin-inner">
+      <div class="container">
+        <div class="footer__wrapper">
+          <div class="site-title-box">
+            <a href="/" class="header__logo">
+              <img src="img/logo.svg" alt="Лого" />
+            </a>
+            <a href="#header" class="footer__btn">
+              <svg>
+                <use xlink:href="img/sprite.svg#top-arrow"></use>
+              </svg>
+            </a>
+          </div>
+
+          <nav class="footer__nav">
+            <ul class="footer__list">
+              <div class="footer__left">
+                <li class="footer__item">
+                  <a href="catalog.html" class="footer__link">Каталог ТС</a>
+                </li>
+                <li class="footer__item">
+                  <a href="services.html" class="footer__link">Услуги</a>
+                </li>
+                <li class="footer__item">
+                  <a href="project.html" class="footer__link">Наши объекты</a>
+                </li>
+                <li class="footer__item">
+                  <a href="contacts.html" class="footer__link">Контакты</a>
+                </li>
+              </div>
+              <div class="footer__right">
+                <li class="footer__item">
+                  <a href="tel:+74957999017" class="footer__link"
+                    >+7 (495) 799-90-17</a
+                  >
+                </li>
+                <li class="footer__item">
+                  <a href="tel:+79161115547" class="footer__link"
+                    >+7 (916) 111-55-47</a
+                  >
+                </li>
+                <li class="footer__item">
+                  <a href="mailto:info@skveda.ru" class="footer__link"
+                    >info@skveda.ru</a
+                  >
+                </li>
+              </div>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

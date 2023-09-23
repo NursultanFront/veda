@@ -6,8 +6,6 @@
   }
 
   &__wrapper {
-    padding: 225px 0 225px;
-
     @include mobile {
       display: flex;
       flex-direction: column-reverse;
@@ -40,9 +38,13 @@
     }
 
     .about__link {
-      @include mobile {
-        display: block;
-        align-self: center;
+      &--tablet {
+        display: none;
+
+        @include mobile {
+          display: block;
+          align-self: center;
+        }
       }
     }
 

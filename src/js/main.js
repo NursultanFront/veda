@@ -19,16 +19,18 @@ document.addEventListener("DOMContentLoaded", function () {
   const accordionContent = document.querySelector(".accordion-content");
   const accordionIcon = document.querySelector(".accordion-label__icon");
 
-  accordionLabel.addEventListener("click", function () {
-    if (
-      accordionContent.style.display === "none" ||
-      accordionContent.style.display === ""
-    ) {
-      accordionContent.style.display = "block";
-      accordionIcon.classList.add("accordion-label__icon_up");
-    } else {
-      accordionContent.style.display = "none";
-      accordionIcon.classList.remove("accordion-label__icon_up");
-    }
-  });
+  if (accordionLabel) {
+    accordionLabel.addEventListener("click", function () {
+      if (
+        accordionContent.style.display === "none" ||
+        accordionContent.style.display === ""
+      ) {
+        accordionContent.style.display = "block";
+        accordionIcon.classList.add("accordion-label__icon_up");
+      } else {
+        accordionContent.style.display = "none";
+        accordionIcon.classList.remove("accordion-label__icon_up");
+      }
+    });
+  }
 });

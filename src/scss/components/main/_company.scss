@@ -1,4 +1,10 @@
 .company {
+  background: linear-gradient(to right, white, transparent);
+
+  @media (max-width: 1300px) {
+    background: transparent;
+  }
+
   &__wrapper {
     display: grid;
     grid-template-columns: 60% 40%;
@@ -15,6 +21,10 @@
     flex-direction: column;
     justify-content: center;
     gap: 52px;
+
+    @media (max-width: 1300px) {
+      padding: 15px;
+    }
 
     @include small-tablet {
       align-items: center;

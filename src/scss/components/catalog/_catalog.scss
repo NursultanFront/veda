@@ -1,5 +1,8 @@
 .catalog {
   &__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
   }
 
   &__search {
@@ -33,7 +36,6 @@
   }
 
   &__list {
-    padding: 64px 0 213px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 23px;

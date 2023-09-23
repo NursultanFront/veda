@@ -141,7 +141,7 @@ input {
 .orange-button {
   padding: 10px 52px;
   background-color: var(--orange-color);
-
+  cursor: pointer;
   @include text-style(17px, 400, var(--light-color));
 
   &:hover {
@@ -240,7 +240,6 @@ input {
 }
 
 .breadcrumbs {
-  padding: 60px 0;
   &__text {
     @include text-style(17px, 400, #373a48);
     &--active {
@@ -276,7 +275,10 @@ input {
 }
 
 .padding-inner {
-  padding: 60px 0;
+}
+
+.margin-inner {
+  margin: 60px 0;
 }
 
 .site-input {
