@@ -1,4 +1,10 @@
 .header {
+  margin-bottom: 100px;
+
+  @include small-tablet {
+    margin: 0;
+  }
+
   &__wrapper {
     display: flex;
     justify-content: space-between;

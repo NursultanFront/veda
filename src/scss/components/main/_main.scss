@@ -3,39 +3,6 @@
   background-repeat: no-repeat;
   background-size: cover;
 
-  &-header {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 5;
-    border-bottom: 1px solid var(--light-color);
-    background: linear-gradient(
-      90deg,
-      rgba(255, 255, 255, 0.4) 0%,
-      rgba(255, 255, 255, 0.4) 100%
-    );
-    backdrop-filter: blur(16px);
-
-    &__wrapper {
-      padding: 20px 0px;
-      display: flex;
-      justify-content: space-between;
-      gap: 20px;
-    }
-
-    &__text {
-      text-shadow: 0px 0px 4px rgba(55, 58, 72, 0.2);
-      font-size: 17px;
-      font-weight: 500;
-      @include text-style(17px, 500, var(--light-color));
-    }
-
-    @include small-tablet {
-      display: none;
-    }
-  }
-
   &__content {
     padding: 241px 0px;
     display: flex;
