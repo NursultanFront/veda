@@ -6,6 +6,8 @@
   }
 
   &__wrapper {
+    position: relative;
+
     @include mobile {
       display: flex;
       flex-direction: column-reverse;
@@ -133,6 +135,18 @@
 
     @include mobile {
       display: none;
+    }
+  }
+
+  &__icon {
+    position: absolute;
+
+    top: -45px;
+    left: 25%;
+
+    @include small-tablet {
+      left: unset;
+      right: 0;
     }
   }
 }

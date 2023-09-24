@@ -35,7 +35,23 @@
     gap: 50px;
   }
 
+  &__item {
+    & + & {
+      position: relative;
+
+      &::before {
+        position: absolute;
+        content: "";
+        height: 100%;
+        width: 2px;
+        background-color: #f4951f;
+        left: -25px;
+      }
+    }
+  }
+
   &__text {
+    line-height: 41px;
     letter-spacing: 1.2px;
     @include text-style(24px, 400, var(--blue-color));
 

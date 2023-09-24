@@ -1,4 +1,7 @@
 .project {
+  background-image: url("../img/back.png");
+  background-repeat: repeat-x;
+
   &__wrapper {
     display: flex;
     flex-direction: column;
